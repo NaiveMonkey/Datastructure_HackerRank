@@ -14,6 +14,10 @@
 
 
 def print_list(head):
-    if head is not None:
+    # if head is not None:
+    #     print(head.data)
+    #     print_list(head.next)
+
+    while head is not None:
         print(head.data)
-        print_list(head.next)
+        head = head.next
