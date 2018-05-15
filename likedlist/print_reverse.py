@@ -28,6 +28,4 @@ head = Node(2, None)
 head = Node(3, head)
 head = Node(1, head)
 
-while head is not None:
-    print(head.data)
-    head = head.next
+ReversePrint(head)
