@@ -27,11 +27,13 @@ def Insert(head, data):
         head.next = Insert(head.next, data)
     return head
 
+
 def Delete(head, position):
     if position == 0: return head.next
     head.next = Delete(head.next, position - 1)
     print(head.data)
     return head
+
 
 head = Insert(None, 1)
 head = Insert(head, 2)
